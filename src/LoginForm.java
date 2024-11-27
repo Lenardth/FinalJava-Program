@@ -152,7 +152,11 @@ public class LoginForm extends JFrame {
     }
 
     private void showAboutInfo() {
-        JOptionPane.showMessageDialog(this, "Innovative Transport System\nVersion 1.0\nDeveloped by Lenard Hlabangwana", "About", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, "Innovative Taxi Booking System\n" +
+                "Version 1.0 Designed by:\n" +
+                "Lenard Tivanani Hlabangwana\n" +
+                "BME BSc Computer Engineering Student\n" +
+                "ID: Neptune GYKM9W", "About", JOptionPane.INFORMATION_MESSAGE);
     }
 
     private HashMap<String, String> loadUsers() {

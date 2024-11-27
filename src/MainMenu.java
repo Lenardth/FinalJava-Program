@@ -40,7 +40,8 @@ public class MainMenu extends JFrame {
     private final Color PANEL_COLOR = new Color(12, 53, 120);  // Royal blue
     private final Color BUTTON_COLOR = Color.BLACK;  // Button color always black
     private final Color BUTTON_TEXT_COLOR = Color.BLACK;  // Button description always black
-    private final Color TEXT_COLOR = Color.WHITE;  // White text
+    private final Color TEXT_COLOR = Color.WHITE;
+    private final Color TEXT_COLOR1 = Color.WHITE;
     private final Color ACCENT_COLOR = new Color(44, 130, 201);  // Accent blue
     private final Color BG_COLOR_ALT = new Color(102, 205, 170);  // Aquamarine for alternative theme
     private final Color BUTTON_COLOR_ALT = Color.BLACK;  // Button color always black in alternative theme
@@ -97,7 +98,15 @@ public class MainMenu extends JFrame {
         exitMenuItem.addActionListener(e -> System.exit(0));
         themeMenuItem.addActionListener(e -> switchTheme());
         altThemeMenuItem.addActionListener(e -> switchAltTheme());
-        aboutMenuItem.addActionListener(e -> JOptionPane.showMessageDialog(this, "Taxi Service Dashboard v3.0\nDeveloped by Lenard Hlabangwana\nFeatures:\n- Real-time taxi availability\n- Calculate fare & book taxis\n- Switchable themes\n- Wallet management\n- Integrated Google Maps for route planning\n- Notification system\n- Table for upcoming taxi schedules\n- Admin analytics for booking trends and driver activity", "About", JOptionPane.INFORMATION_MESSAGE));
+        aboutMenuItem.addActionListener(e -> JOptionPane.showMessageDialog(this, "Innovative Taxi Booking System\n" +
+                "Version 1.0 Designed by:\n" +
+                "Lenard Tivanani Hlabangwana\n" +
+                "BME BSc Computer Engineering Student\n" +
+                "ID: Neptune GYKM9W\n" +
+                "- Real-time taxi availability\n- Calculate fare & book taxis" +
+                "\n- Switchable themes\n- Wallet management\n- " +
+                "Integrated Google Maps for route planning\n- Notification system\n- " +
+                "Table for upcoming taxi schedules\n- Admin analytics for booking trends and driver activity", "About", JOptionPane.INFORMATION_MESSAGE));
         adminAnalyticsMenuItem.addActionListener(e -> showAdminAnalytics());
 
         JPanel mainContainer = new JPanel(new BorderLayout());
@@ -234,7 +243,7 @@ public class MainMenu extends JFrame {
         taxiSelectionLabel.setForeground(TEXT_COLOR);
         taxiComboBox = new JComboBox<>(new String[]{"Standard Taxi", "Luxury Taxi", "Minibus"});
         taxiComboBox.setBackground(PANEL_COLOR);
-        taxiComboBox.setForeground(TEXT_COLOR);
+        taxiComboBox.setForeground(BUTTON_COLOR_ALT);
 
         inputPanel.add(initialPointLabel);
         inputPanel.add(initialPointField);
