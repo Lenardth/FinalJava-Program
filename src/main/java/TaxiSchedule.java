@@ -31,7 +31,7 @@ public class TaxiSchedule extends JFrame {
         titleLabel.setBorder(BorderFactory.createEmptyBorder(20, 0, 20, 0));
         schedulePanel.add(titleLabel, BorderLayout.NORTH);
 
-        taxis = loadTaxiData("taxis.ser");
+        taxis = loadTaxiData("data/taxis.ser");
         taxis = filterRealTimeTaxis(taxis);
         timeFormat = new SimpleDateFormat("hh:mm a");
 

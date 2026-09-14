@@ -8,7 +8,7 @@ public class TaxiDataGenerator {
 
     public static void main(String[] args) {
         ArrayList<Taxi> taxiList = generateTaxiData(1000);
-        saveTaxiData(taxiList, "taxis.ser");
+        saveTaxiData(taxiList, "data/taxis.ser");
     }
 
     static ArrayList<Taxi> generateTaxiData(int numberOfTaxis) {
